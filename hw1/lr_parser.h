@@ -6,6 +6,9 @@
 
 #include <string>
 #include <vector>
+#include <map>
+#include <set>
+
 
 enum LRAction {
   INVALID = 0,
@@ -36,6 +39,13 @@ struct LRRule {
 
 struct LRParser {
   // Design your LRParser structure.
+
+    std::map<std::pair<int, int>, std::pair<LRAction, int> > action_table;
+
+    std::map<std::pair<int, int>, int > goto_table;
+
+    std::map<int, std::pair<int, int> > rule_table;
+
 };
 
 // Homework 1.2

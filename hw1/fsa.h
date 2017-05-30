@@ -34,7 +34,6 @@ struct FiniteStateAutomaton {
     set<int> start_states;
     set<int> accept_states;
     set<char> input_chars;
-    set<int> all_states;
     vector<TableSet> table;
 };
 
